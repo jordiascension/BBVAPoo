@@ -1,9 +1,12 @@
 package es.bbva.model;
 
+import java.util.Date;
+
 public class Student {
 
     private String name;
     private String surname;
+    private Date dateOfBirth;
 
     public Student(){
 
@@ -28,5 +31,13 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }
