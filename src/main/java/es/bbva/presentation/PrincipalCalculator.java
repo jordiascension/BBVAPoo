@@ -9,7 +9,10 @@ public class PrincipalCalculator {
         float resultado = calculator.sum(4.50f, 5.67f);
         System.out.println("El resultado es " + resultado);
 
-        float resultado1 = calculator.sum(4, 5);
+        int resultado1 = calculator.sum(4, 5);
         System.out.println("El resultado es " + resultado1);
+
+        int resultado2 = calculator.sum(4, 5, 6);
+        System.out.println("El resultado es " + resultado2);
     }
 }

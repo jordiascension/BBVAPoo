@@ -8,15 +8,15 @@ public class Person {
     private String identityCard;
     private UUID uuid;
 
-    public Person(String name, String surname, String identityCard) {
-        this(name,surname);//dry principle--don't repeat yourself
-        this.identityCard = identityCard;
-    }
-
     public Person(String name, String surname) {
         this.name = name;
         this.surname = surname;
         this.uuid = UUID.randomUUID();
+    }
+
+    public Person(String name, String surname, String identityCard) {
+        this(name,surname);//dry principle--don't repeat yourself
+        this.identityCard = identityCard;
     }
 
     public String getName() {

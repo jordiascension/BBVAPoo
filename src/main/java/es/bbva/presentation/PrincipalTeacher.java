@@ -6,7 +6,8 @@ public class PrincipalTeacher {
 
     public static void main(String[] args) {
         Teacher teacher = new Teacher("Pepe","Soto",
-                                   4, new String[]{"Primero", "Segundo", "Tercero"});
+                                   4,
+                                    new String[]{"Primero", "Segundo", "Tercero","Cuarto"});
         teacher.setIdentityCard("323424234V");
         System.out.println("The teacher UUID is " + teacher.getUuid().toString());
         System.out.println("The teacher's name is " + teacher.getName());
